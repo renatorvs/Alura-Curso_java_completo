@@ -7,7 +7,9 @@ public class Fluxo {
 		metodo1();
 		//lancei uma excessao no metodo dois e catei ela aqui em cima 
 		//throw = lançar
-		} catch  (ArithmeticException | NullPointerException | MinhaException ex) {
+		
+		//exception pega qualquer tipo de exception
+		} catch  (Exception ex ) {
 		String msg = ex.getMessage();
 			System.out.println("Minhaexception = " + msg);
 			ex.printStackTrace();

@@ -1,4 +1,4 @@
-package herdadoConta;
+package br.com.bitebank.banco.modelo;
 
 public abstract class Conta {
 

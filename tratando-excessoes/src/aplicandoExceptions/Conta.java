@@ -1,4 +1,4 @@
-package herdadoConta;
+package aplicandoExceptions;
 
 public abstract class Conta {
 

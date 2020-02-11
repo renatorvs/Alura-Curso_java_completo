@@ -1,4 +1,4 @@
-package herdadoConta;
+package br.com.bitebank.banco.modelo;
 //new ContaCorrente()
 public class ContaCorrente extends Conta implements Tributavel {
 
