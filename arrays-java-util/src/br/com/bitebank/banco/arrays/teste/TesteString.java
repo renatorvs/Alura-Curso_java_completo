@@ -1,4 +1,4 @@
-package br.com.bitebank.banco.teste;
+package br.com.bitebank.banco.arrays.teste;
 
 public class TesteString {
 	  public static void main(String[] args) {
