@@ -1,6 +1,27 @@
 package br.com.bitebank.banco.modelo;
 
-public abstract class Conta {
+public abstract class Conta extends Object { 
+	
+
+		//
+
+		        public boolean ehIgual(Conta outra) {
+
+		                if(this.agencia != outra.agencia) {
+		                    return false;
+		                }
+
+		                if(this.numero != outra.numero) {
+		                    return false;
+		                }
+
+		                return true;
+
+		        }
+
+		   
+		  
+		
 
     protected double saldo;
     private int agencia;
@@ -77,6 +98,11 @@ public abstract class Conta {
 	public double getValorimposto() {
 		// TODO Auto-generated method stub
 		return 0;
+	}
+	
+	public String toString(){
+		return " Numero: " + this.numero + "Agencia: " + this.agencia; 
+		
 	}
 
 }
