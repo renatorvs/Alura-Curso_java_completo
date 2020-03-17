@@ -15,6 +15,16 @@ public class Produtos {
 		return nome;
 	}
 	
+	public double getPreco() {
+		return preco;
+	}
+
+
+	public Object getPrecoComImposto() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
 	
 	
 }

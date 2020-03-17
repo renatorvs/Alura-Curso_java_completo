@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER"/>
+	<classpathentry kind="src" path="arrays-java-util/src"/>
+	<classpathentry kind="src" path="Bitbank heranca e interface/src"/>
+	<classpathentry kind="src" path="bitbank/src"/>
+	<classpathentry kind="src" path="bytebank-bibliotecas/src"/>
+	<classpathentry kind="src" path="bytebank-encapsulado/src"/>
+	<classpathentry kind="src" path="bytebank-herdado-conta/src"/>
+	<classpathentry kind="src" path="bytebank-herdado/src"/>
+	<classpathentry kind="src" path="Java-IO/src"/>
+	<classpathentry kind="src" path="JdbcConnector/src"/>
+	<classpathentry kind="src" path="pacotes-JavaLang/src"/>
+	<classpathentry kind="src" path="tratando-excessoes/src"/>
+	<classpathentry kind="lib" path="bytebank-bibliotecas/libs/bitebank2.0.0.jar"/>
+	<classpathentry kind="lib" path="bytebank-bibliotecas/libs/bitebank3.0.0.jar"/>
+	<classpathentry kind="output" path="Bitbank heranca e interface/bin"/>
+</classpath>

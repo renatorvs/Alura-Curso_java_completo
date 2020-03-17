@@ -1,4 +1,4 @@
-package br.com.alura.maven;
+package br.com.ProjetoNovoEmMavem;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
