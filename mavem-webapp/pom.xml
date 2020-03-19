@@ -8,6 +8,18 @@
   <name>mavem-webapp Maven Webapp</name>
   <url>http://maven.apache.org</url>
   <dependencies>
+  <dependency>
+    <groupId>br.com.caelum.stella</groupId>
+    <artifactId>caelum-stella-core</artifactId>
+    <version>2.1.2</version>
+</dependency>
+<dependency>
+	
+    <groupId>br.com.alura.maven</groupId>
+    <artifactId>produtos</artifactId>
+    <version>1.0-SNAPSHOT</version> 
+       <scope>compiler</scope>
+</dependency>
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
@@ -26,16 +38,18 @@
     
     <plugins>
  
-            <plugin>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-maven-plugin</artifactId>
-                <version>9.3.7.v20160115</version>
-            </plugin>
-            <plugin>
-                <groupId>org.eclipse.jetty</groupId>
-                <artifactId>jetty-maven-plugin</artifactId>
-                <version>9.3.7.v20160115</version>
-            </plugin>
+            
+<plugin>
+  <groupId>org.eclipse.jetty</groupId>
+  <artifactId>jetty-maven-plugin</artifactId>
+  <version>9.4.27.v20200227</version>
+  <configuration>
+    <scanIntervalSeconds>10</scanIntervalSeconds>
+    <webApp>
+      <contextPath>/webapp</contextPath>
+    </webApp>
+  </configuration>
+</plugin>
         </plugins>
 
   </build>
