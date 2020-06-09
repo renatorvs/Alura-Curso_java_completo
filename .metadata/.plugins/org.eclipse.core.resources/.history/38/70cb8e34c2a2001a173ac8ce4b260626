@@ -1,0 +1,12 @@
+package br.com.caelum.leilao.teste;
+
+import org.junit.Test;
+
+public class LeilaoTest {
+	
+	@Test
+	public void deveReceberUmLance() {
+		Leilao lei = Leilao("MAc book pro 15");
+	}
+
+}

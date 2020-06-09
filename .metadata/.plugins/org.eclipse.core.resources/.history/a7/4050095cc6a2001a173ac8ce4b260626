@@ -1,0 +1,30 @@
+package br.com.caelum.leilao.dominio;
+
+public class Lance {
+
+	private Usuario usuario;
+	private double valor;
+	
+	public Lance(Usuario usuario, double valor) {
+		this.usuario = usuario;
+		this.valor = valor;
+	}
+	
+	public void propoe(Lance lance) {
+	    if(lances.isEmpty() || 
+	            !lances.get(lances.size()-1).getUsuario().equals(lance.getUsuario())) {
+	        lances.add(lance);
+	    }
+	}
+
+	public Usuario getUsuario() {
+		return usuario;
+	}
+
+	public double getValor() {
+		return valor;
+	}
+	
+	
+	
+}

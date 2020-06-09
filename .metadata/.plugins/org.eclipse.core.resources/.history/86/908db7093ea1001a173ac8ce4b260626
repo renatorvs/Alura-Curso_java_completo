@@ -1,0 +1,16 @@
+package br.com.caelum.leilao.dominio.servico;
+
+import br.com.caelum.leilao.dominio.Lance;
+import br.com.caelum.leilao.dominio.Leilao;
+
+public class Avaliador {
+public Avaliador(Leilao leitao) {
+	
+	double maiorDeTodos = 0;
+	for (Lance lance :  leilao.getLances()) {
+		if (lance.getValor() > maiorDeTodos) { maiorDeTodos = lance.getValor();
+				}
+	}
+}
+
+}

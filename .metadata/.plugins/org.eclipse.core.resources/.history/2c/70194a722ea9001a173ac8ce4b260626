@@ -1,0 +1,45 @@
+package teste;
+
+public class principal {
+	
+	
+	public static void main(String[] args) {
+		
+		String[] log = new String[4];
+		
+		log[1] = "a";
+		log[2] = "b";
+		log[3] = "c";
+		log[4] = "d";
+		log[5] = "e";
+		
+		
+		
+		
+		
+		
+		for (String string : log) {
+	parametros	=	getvlan();
+		}
+		
+		
+		
+		
+		
+		
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	public void getVlan(String campo) {
+		
+	}
+	
+	
+	
+}

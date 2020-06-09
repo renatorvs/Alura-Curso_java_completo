@@ -1,0 +1,13 @@
+package br.com.caelum.leilao.dominio.servico;
+
+import br.com.caelum.leilao.dominio.Leilao;
+
+public class Avaliador {
+public Avaliador(Leilao leitao) {
+	int maiorDeTodos = 0;
+	for (int i = 0; i < array.length; i++) {
+		
+	}
+}
+
+}

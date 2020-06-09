@@ -1,0 +1,9 @@
+package br.com.alura.threads;
+
+public class Tarefamultificacao  implements new Runnable() {
+	public void run() {
+		
+	}
+}{
+	
+}

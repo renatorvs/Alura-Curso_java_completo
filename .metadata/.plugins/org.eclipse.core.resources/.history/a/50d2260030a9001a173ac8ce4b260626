@@ -1,0 +1,57 @@
+package teste;
+
+public class principal {
+	
+	
+	public static void main(String[] args) {
+		
+		String[] log = new String[5];
+		
+		log[1] = "a";
+		log[2] = "b";
+		log[3] = "c";
+		log[4] = "d";
+		log[0] = "e";
+		
+		
+		
+		
+		
+		String parametros = null;
+		for (String campo : log) {
+	 parametros	=	getVlan(campo);
+		}
+		
+		System.out.println(parametros);
+		
+		
+		
+		
+		
+		
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	public static String getVlan(final String campo) {
+		String a = null;
+		String b = null;
+		String c = null;
+		if(campo == "c"){
+			b = campo;
+			c = campo;
+		} else if(campo == "e"){
+			a = campo;
+		}
+		return  "a:" + a + "b:" + b + "c:" + c;
+		
+	}
+	
+	
+	
+}

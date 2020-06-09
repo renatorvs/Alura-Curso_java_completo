@@ -1,0 +1,26 @@
+class importe mockito 
+mport static org.junit.Assert.assertTrue;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+import static org.mockito.Mockito.doThrow;
+
+
+
+   LeilaoDao daoFalso = mock(LeilaoDao.class);
+   				
+   				Quando o metodo for invocado, retorno leiloesantigo
+	        when(daoFalso.correntes()).thenReturn(leiloesAntigos);
+	        
+	         // verificando que o metodo atualiza foi realmente invocado!
+        verify(daoFalso).atualiza(leilao1);
+        					quando metodo for evocado ele lançara a exeption
+        	     //   doThrow(new RuntimeException()).when(daoFalso).atualiza(leilao1);
+        
+  O método atLeastOnce() vai garantir que o método foi invocado no mínimo uma vez. Ou seja, se ele foi invocado 1, 2, 3 ou mais vezes, o teste passa. Se ele não for invocado, o teste vai falhar.
+
+O método atLeast(numero) funciona de forma análoga ao método acima, com a diferença de que passamos para ele o número mínimo de invocações que um método deve ter.
+
+Por fim, o método atMost(numero) nos garante que um método foi executado até no máximo N vezes. Ou seja, se o método tiver mais invocações do que o que foi passado para o atMost, o teste falha.
+
+Veja que existem diversas maneiras diferentes para garantir a quantidade de invocações de um método! Você pode escolher a melhor e mais elegante para seu teste!

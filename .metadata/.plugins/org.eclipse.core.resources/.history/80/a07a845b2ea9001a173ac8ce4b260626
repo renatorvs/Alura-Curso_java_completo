@@ -1,0 +1,30 @@
+package teste;
+
+public class principal {
+	
+	
+	public static void main(String[] args) {
+		
+		String[] log = new String[4];
+		
+		
+		
+		
+		
+		
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	public void getVlan(String campo) {
+		
+	}
+	
+	
+	
+}

@@ -1,0 +1,36 @@
+import java.util.ArrayList;
+import java.util.jar.Attributes;
+
+import org.xml.sax.SAXException;
+import org.xml.sax.helpers.DefaultHandler;
+
+import br.com.alura.model.Produto;
+
+public class LeitorXml extends DefaultHandler{
+
+    List<Produto> produtos = new ArrayList<>();
+    StringBuilder conteudo;
+    Produto produto;
+
+    public void startElement(String uri, String localName, String qName, Attributes attributes) throws SAXException {
+        System.out.println("abriu a tag:" + qName);
+
+        if(qName.equals("produto")) {
+            produto = new Produto();
+        }
+
+    }
+
+    @Override
+    public void characters(char[] ch, int start, int lenght) throws SAXException {
+        conteudo.append(new String(ch, start, lenght));
+    }
+
+    @Override
+    public void endElement(String uri, String localName, String qName) throws SAXException {
+        if(qName.equals("produto")) {
+            produtos.add(produto);
+        }
+
+    }
+}

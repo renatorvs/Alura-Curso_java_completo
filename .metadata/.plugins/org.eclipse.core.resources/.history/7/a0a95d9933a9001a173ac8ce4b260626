@@ -1,0 +1,81 @@
+package teste;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class principal {
+	
+	
+	public static void main(String[] args) {
+		
+		String[] log = new String[5];
+		
+		log[1] = "a";
+		log[2] = "b";
+		log[3] = "c";
+		log[4] = "d";
+		log[0] = "e";
+		
+		
+		List<String> s = new ArrayList();
+		s.add("me");
+		s.add("me1");
+		s.add("me1");
+		
+		s.get(0);
+		s.get(1);
+		s.get(2);
+		System.out.println(s.get(1));
+		
+		
+		
+		List<String> parametros = new ArrayList();
+		
+		List<String> a = null;
+		for (String campo : log) {
+	 a	=	getVlan(campo, parametros);
+		System.out.println(a);
+
+		}
+		
+		
+		
+		
+		
+		
+		
+	}
+
+	
+	
+	
+	
+	
+	
+	
+	public static List<String> getVlan(final String campo, List<String> parametros) {
+		String a = null;
+		String b = null;
+		String c = null;
+		if(campo == "c"){
+			b = campo;
+			c = campo;
+			
+			parametros.add(b);
+			parametros.add(c);
+		} else if(campo == "e"){
+			a = campo;
+			parametros.add(a);
+
+		}
+		parametros.get(0);
+		s.get(1);
+		s.get(2);
+		return parametros;
+		//return  "a:" + parametros.get(0) + "b:" + parametros.get(0) + "c:" + parametros.get(0);
+		
+	}
+	
+	
+	
+}

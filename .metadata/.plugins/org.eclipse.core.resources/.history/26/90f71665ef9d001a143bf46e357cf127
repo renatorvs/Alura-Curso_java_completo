@@ -1,0 +1,8 @@
+package br.com.alura.teste;
+
+public class LeArquivoXmlTerceiraForma {
+	
+	InputSream is = new FileInputStream("src/vendas.xml");
+	
+	
+}

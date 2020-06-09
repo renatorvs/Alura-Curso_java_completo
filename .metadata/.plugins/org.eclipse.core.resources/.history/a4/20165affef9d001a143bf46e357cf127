@@ -1,0 +1,21 @@
+package br.com.alura.teste;
+
+import java.io.FileInputStream;
+import java.io.InputStream;
+
+import javax.xml.stream.XMLEventReader;
+import javax.xml.stream.XMLInputFactory;
+
+public class LeArquivoXmlTerceiraForma {
+	
+	public static void main(String[] args) throws Exception {
+		InputStream is = new FileInputStream("src/vendas.xml");
+		XMLInputFactory factory  = XMLInputFactory.newInstance();
+		XMLEventReader eventors = factory.createXMLEventReader(is);
+		
+		XMLEvent  evento = eventos.nextEvent();
+		
+	}
+	
+	
+}
